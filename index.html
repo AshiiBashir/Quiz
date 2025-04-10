@@ -44,82 +44,116 @@
     .external-link a:hover {
       text-decoration: underline;
     }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #d2691e;
+    }
   </style>
 </head>
 <body>
   <h1>🖥️ Grade 4 – Basics of Computer Interactive Quiz</h1>
 
   <h2>✅ Multiple Choice Questions (MCQs)</h2>
-  <div class="question">
-    <p>1. What is data?</p>
-    <input type="radio" name="q1"> a) Processed information<br>
-    <input type="radio" name="q1"> b) Raw facts and figures<br>
-    <input type="radio" name="q1"> c) Pictures only<br>
-    <input type="radio" name="q1"> d) A type of software<br>
-  </div>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. What is data?</p>
+      <input type="radio" name="q1" value="a"> a) Processed information<br>
+      <input type="radio" name="q1" value="b"> b) Raw facts and figures<br>
+      <input type="radio" name="q1" value="c"> c) Pictures only<br>
+      <input type="radio" name="q1" value="d"> d) A type of software<br>
+    </div>
 
-  <div class="question">
-    <p>2. Which of these is an example of Boolean data?</p>
-    <input type="radio" name="q2"> a) "Hello"<br>
-    <input type="radio" name="q2"> b) 123<br>
-    <input type="radio" name="q2"> c) Yes or No<br>
-    <input type="radio" name="q2"> d) April 4, 2025<br>
-  </div>
+    <div class="question">
+      <p>2. Which of these is an example of Boolean data?</p>
+      <input type="radio" name="q2" value="a"> a) "Hello"<br>
+      <input type="radio" name="q2" value="b"> b) 123<br>
+      <input type="radio" name="q2" value="c"> c) Yes or No<br>
+      <input type="radio" name="q2" value="d"> d) April 4, 2025<br>
+    </div>
 
-  <div class="question">
-    <p>3. What device stores data for a long time?</p>
-    <input type="radio" name="q3"> a) RAM<br>
-    <input type="radio" name="q3"> b) Monitor<br>
-    <input type="radio" name="q3"> c) Hard Disk<br>
-    <input type="radio" name="q3"> d) Keyboard<br>
-  </div>
+    <div class="question">
+      <p>3. What device stores data for a long time?</p>
+      <input type="radio" name="q3" value="a"> a) RAM<br>
+      <input type="radio" name="q3" value="b"> b) Monitor<br>
+      <input type="radio" name="q3" value="c"> c) Hard Disk<br>
+      <input type="radio" name="q3" value="d"> d) Keyboard<br>
+    </div>
 
-  <div class="question">
-    <p>4. Which of the following is NOT a type of data?</p>
-    <input type="radio" name="q4"> a) Numbers<br>
-    <input type="radio" name="q4"> b) Text<br>
-    <input type="radio" name="q4"> c) Mouse<br>
-    <input type="radio" name="q4"> d) Pictures<br>
-  </div>
+    <div class="question">
+      <p>4. Which of the following is NOT a type of data?</p>
+      <input type="radio" name="q4" value="a"> a) Numbers<br>
+      <input type="radio" name="q4" value="b"> b) Text<br>
+      <input type="radio" name="q4" value="c"> c) Mouse<br>
+      <input type="radio" name="q4" value="d"> d) Pictures<br>
+    </div>
 
-  <div class="question">
-    <p>5. How do computers store data?</p>
-    <input type="radio" name="q5"> a) In alphabets<br>
-    <input type="radio" name="q5"> b) In folders<br>
-    <input type="radio" name="q5"> c) As 0s and 1s<br>
-    <input type="radio" name="q5"> d) On paper<br>
-  </div>
+    <div class="question">
+      <p>5. How do computers store data?</p>
+      <input type="radio" name="q5" value="a"> a) In alphabets<br>
+      <input type="radio" name="q5" value="b"> b) In folders<br>
+      <input type="radio" name="q5" value="c"> c) As 0s and 1s<br>
+      <input type="radio" name="q5" value="d"> d) On paper<br>
+    </div>
 
-  <h2>✍️ Short Answer Questions</h2>
-  <div class="question short-answer">
-    <p>1. What is the difference between <strong>data</strong> and <strong>information</strong>?</p>
-    <input type="text" name="sa1">
-  </div>
+    <h2>✍️ Short Answer Questions</h2>
+    <div class="question short-answer">
+      <p>1. What is the difference between <strong>data</strong> and <strong>information</strong>?</p>
+      <input type="text" name="sa1">
+    </div>
 
-  <div class="question short-answer">
-    <p>2. Name <strong>two storage devices</strong> used in a computer.</p>
-    <input type="text" name="sa2">
-  </div>
+    <div class="question short-answer">
+      <p>2. Name <strong>two storage devices</strong> used in a computer.</p>
+      <input type="text" name="sa2">
+    </div>
 
-  <div class="question short-answer">
-    <p>3. Give one example of <strong>text data</strong>.</p>
-    <input type="text" name="sa3">
-  </div>
+    <div class="question short-answer">
+      <p>3. Give one example of <strong>text data</strong>.</p>
+      <input type="text" name="sa3">
+    </div>
 
-  <div class="question short-answer">
-    <p>4. Why is <strong>data important</strong> in our daily life?</p>
-    <input type="text" name="sa4">
-  </div>
+    <div class="question short-answer">
+      <p>4. Why is <strong>data important</strong> in our daily life?</p>
+      <input type="text" name="sa4">
+    </div>
 
-  <div class="question short-answer">
-    <p>5. How  <strong>data stored</strong> in a computer?</p>
-    <input type="text" name="sa5">
-  </div>
+    <div class="question short-answer">
+      <p>5. What does the <strong>CPU</strong> do in a computer?</p>
+      <input type="text" name="sa5">
+    </div>
 
-  <button class="submit-btn">Submit</button>
+    <button type="button" class="submit-btn" onclick="checkAnswers()">Submit</button>
+  </form>
+
+  <div class="result" id="result"></div>
 
   <div class="external-link">
     🔗 <strong>Online Version:</strong> <a href="https://ashiibashir.github.io/quiz1/" target="_blank">Click here to take this quiz online</a>
   </div>
+
+  <script>
+    function checkAnswers() {
+      const answers = {
+        q1: "b",
+        q2: "c",
+        q3: "c",
+        q4: "c",
+        q5: "c"
+      };
+
+      let score = 0;
+      let total = Object.keys(answers).length;
+
+      for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === answers[q]) {
+          score++;
+        }
+      }
+
+      document.getElementById("result").innerText = `You got ${score} out of ${total} MCQs correct!`;
+    }
+  </script>
 </body>
 </html>
